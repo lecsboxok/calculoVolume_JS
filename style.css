@@ -1,0 +1,79 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#main {
+    background: linear-gradient(245deg, #F00 0%, rgba(0, 26, 255, 0.56) 100%);
+}
+
+
+/* CAIXA */
+.caixas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 100px;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 230px;
+    background-color: white;
+    border-radius: 10px;
+    height: 400px; 
+    cursor: pointer;
+}
+
+.caixa .imagem img {
+    padding-top: 50px;
+    padding: 30px;
+    height: 170px;
+}
+
+.caixa:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+    transform: 0.2;
+    box-shadow: 3px 4px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.texto {
+    text-align: center;
+    margin: 5px;
+}
+
+#calculo, #calculo2, #calculo3, #calculo4, #calculo5 {
+    font: 600 15px 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+.titulo {
+    font: 800 18px 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.calc {
+    margin-top: 10px;
+}
+
+/* @media screen and (max-width: 400px) {
+    .caixas {
+        display: flex;
+        margin: 100px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+} */

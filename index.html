@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main id="main">
+        <section class="section">
+            <h2>Descubra o volume dos poliedros abaixo</h2>
+        </section>
+        <section class="section">
+            <div class="caixas">
+                <div class="caixa" onclick="paralelepipido()">
+                    <div class="imagem">
+                        <img src="img/paralelepípido.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <div class="titulo">
+                            <h3>Paralelepípido</h3>
+                        </div>
+                        <div class="calc">
+                            <p id="calculo"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa" onclick="cilindro()">
+                    <div class="imagem">
+                        <img src="img/cilíndro.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <div class="titulo">
+                            <h3>Cilíndro</h3>
+                        </div>
+                        <div class="calc">
+                            <p id="calculo2"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa" onclick="piramide()">
+                    <div class="imagem">
+                        <img src="img/pirâmide.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <div class="titulo">
+                            <h3>Pirâmide</h3>
+                        </div>
+                        <div class="calc">
+                            <p id="calculo3"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa" onclick="cone()">
+                    <div class="imagem">
+                        <img src="img/cone.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <div class="titulo">
+                            <h3>Cone</h3>
+                        </div>
+                        <div class="calc">
+                            <p id="calculo4"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa" onclick="esfera()">
+                    <div class="imagem">
+                        <img src="img/esfera.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <div class="titulo">
+                            <h3>Esfera</h3>
+                        </div>
+                        <div class="calc">
+                            <p id="calculo5"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function paralelepipido(){
+            let lado1 = Number(prompt("Insira o valor da largura:"))
+            let lado2 = Number(prompt("Insira o valor do comprimento:"))
+            let altura = Number(prompt("Insira o valor da altura:"))
+            let resu = lado1*lado2*altura
+
+            alert("O resultado da operação é: "+resu+"m³")
+            document.getElementById("calculo").innerHTML = "O resultado da operação é: "+resu+"m³";
+        }
+
+        function cilindro(){
+            let raio = Number(prompt("Insira o valor do raio:"))
+            let altura = Number(prompt("Insira o valor da altura:"))
+            let resu2 = Math.PI*(raio)**2*altura
+
+            alert("O resultado da operação é: "+resu2+"m³")
+            document.getElementById("calculo2").innerHTML = "O resultado da operação é: "+resu2+"m³";
+        }
+
+        function piramide(){
+            let lado1 = Number(prompt("Insira o valor da largura:"))
+            let altura = Number(prompt("Insira o valor da altura:"))
+            let resu = lado1*lado1*altura/3
+
+            alert("O resultado da operação é: "+resu+"m³")
+            document.getElementById("calculo3").innerHTML = "O resultado da operação é: "+resu+"m³";
+        }
+
+        function cone(){
+            let raio = Number(prompt("Insira o valor do raio:"))
+            let altura = Number(prompt("Insira o valor da altura:"))
+            let resu2 = Math.PI*(raio)**2*altura/3
+
+            alert("O resultado da operação é: "+resu2+"m³")
+            document.getElementById("calculo4").innerHTML = "O resultado da operação é: "+resu2+"m³";
+        }
+
+        function esfera(){
+            let raio = Number(prompt("Insira o valor do raio:"))
+            let resu = 4/3*Math.PI*raio**3
+
+            alert("O resultado da operação é: "+resu+"m³")
+            document.getElementById("calculo5").innerHTML = "O resultado da operação é: "+resu+"m³";
+        }
+
+
+    </script>
+</body>
+</html>
