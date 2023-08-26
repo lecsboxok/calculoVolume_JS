@@ -14,17 +14,44 @@ img {
     height: auto;
 }
 
-#main {
-    background: linear-gradient(245deg, #F00 0%, rgba(0, 26, 255, 0.56) 100%);
+body {
+    background-color: #38D0F2;
 }
 
+@font-face {
+    font-family: 'KanitBold';
+    src: url(fonts/Kanit-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url(fonts/Kanit-Regular.ttf);
+}
+
+/* #main {
+    background: linear-gradient(245deg, #F00 0%, rgba(0, 26, 255, 0.56) 100%);
+} */
+
+.logo {
+    font: 700 40px 'KanitBold', sans-serif;
+}
+
+nav {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.subTitulo {
+    margin-left: 60px;
+    font: 400 25px 'Kanit', sans-serif;
+}
 
 /* CAIXA */
 .caixas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 100px;
+    margin: 30px;
 }
 
 .caixa {
@@ -36,6 +63,7 @@ img {
     border-radius: 10px;
     height: 400px; 
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .caixa .imagem img {
@@ -57,12 +85,12 @@ img {
 }
 
 #calculo, #calculo2, #calculo3, #calculo4, #calculo5 {
-    font: 600 15px 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font: 400 20px 'Kanit', sans-serif;
     color: red;
 }
 
 .titulo {
-    font: 800 18px 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font: 800 20px 'Kanit', sans-serif;
 }
 
 .calc {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,86 +8,92 @@
 </head>
 <body>
     <header>
-
+        <div class="container">
+            <nav>
+                <h1 class="logo">VOLUME</h1>
+            </nav>
+        </div>
     </header>
     <main id="main">
         <section class="section">
-            <h2>Descubra o volume dos poliedros abaixo</h2>
+            <div class="container">
+                <h2 class="subTitulo">Descubra o volume dos sólidos abaixo:</h2>
+            </div>
         </section>
         <section class="section">
-            <div class="caixas">
-                <div class="caixa" onclick="paralelepipido()">
-                    <div class="imagem">
-                        <img src="img/paralelepípido.png" alt="">
-                    </div>
-                    <div class="texto">
-                        <div class="titulo">
-                            <h3>Paralelepípido</h3>
+            <div class="container">
+                <div class="caixas">
+                    <div class="caixa" onclick="paralelepipido()">
+                        <div class="imagem">
+                            <img src="img/paralelepípido.png" alt="">
                         </div>
-                        <div class="calc">
-                            <p id="calculo"></p>
+                        <div class="texto">
+                            <div class="titulo">
+                                <h3>Paralelepípido</h3>
+                            </div>
+                            <div class="calc">
+                                <p id="calculo"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa" onclick="cilindro()">
+                        <div class="imagem">
+                            <img src="img/cilíndro.jpg" alt="">
+                        </div>
+                        <div class="texto">
+                            <div class="titulo">
+                                <h3>Cilíndro</h3>
+                            </div>
+                            <div class="calc">
+                                <p id="calculo2"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa" onclick="piramide()">
+                        <div class="imagem">
+                            <img src="img/pirâmide.png" alt="">
+                        </div>
+                        <div class="texto">
+                            <div class="titulo">
+                                <h3>Pirâmide</h3>
+                            </div>
+                            <div class="calc">
+                                <p id="calculo3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa" onclick="cone()">
+                        <div class="imagem">
+                            <img src="img/cone.jpg" alt="">
+                        </div>
+                        <div class="texto">
+                            <div class="titulo">
+                                <h3>Cone</h3>
+                            </div>
+                            <div class="calc">
+                                <p id="calculo4"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa" onclick="esfera()">
+                        <div class="imagem">
+                            <img src="img/esfera.jpg" alt="">
+                        </div>
+                        <div class="texto">
+                            <div class="titulo">
+                                <h3>Esfera</h3>
+                            </div>
+                            <div class="calc">
+                                <p id="calculo5"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="caixa" onclick="cilindro()">
-                    <div class="imagem">
-                        <img src="img/cilíndro.jpg" alt="">
-                    </div>
-                    <div class="texto">
-                        <div class="titulo">
-                            <h3>Cilíndro</h3>
-                        </div>
-                        <div class="calc">
-                            <p id="calculo2"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="caixa" onclick="piramide()">
-                    <div class="imagem">
-                        <img src="img/pirâmide.png" alt="">
-                    </div>
-                    <div class="texto">
-                        <div class="titulo">
-                            <h3>Pirâmide</h3>
-                        </div>
-                        <div class="calc">
-                            <p id="calculo3"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="caixa" onclick="cone()">
-                    <div class="imagem">
-                        <img src="img/cone.jpg" alt="">
-                    </div>
-                    <div class="texto">
-                        <div class="titulo">
-                            <h3>Cone</h3>
-                        </div>
-                        <div class="calc">
-                            <p id="calculo4"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="caixa" onclick="esfera()">
-                    <div class="imagem">
-                        <img src="img/esfera.jpg" alt="">
-                    </div>
-                    <div class="texto">
-                        <div class="titulo">
-                            <h3>Esfera</h3>
-                        </div>
-                        <div class="calc">
-                            <p id="calculo5"></p>
-                        </div>
-                    </div>
-                </div>
+    
             </div>
 
         </section>
     </main>
-    <footer>
-
-    </footer>
     <script>
         function paralelepipido(){
             let lado1 = Number(prompt("Insira o valor da largura:"))
@@ -102,7 +108,7 @@
         function cilindro(){
             let raio = Number(prompt("Insira o valor do raio:"))
             let altura = Number(prompt("Insira o valor da altura:"))
-            let resu2 = Math.PI*(raio)**2*altura
+            let resu2 = 3.14*(raio)**2*altura
 
             alert("O resultado da operação é: "+resu2+"m³")
             document.getElementById("calculo2").innerHTML = "O resultado da operação é: "+resu2+"m³";
@@ -120,7 +126,7 @@
         function cone(){
             let raio = Number(prompt("Insira o valor do raio:"))
             let altura = Number(prompt("Insira o valor da altura:"))
-            let resu2 = Math.PI*(raio)**2*altura/3
+            let resu2 = 3.14*(raio)**2*altura/3
 
             alert("O resultado da operação é: "+resu2+"m³")
             document.getElementById("calculo4").innerHTML = "O resultado da operação é: "+resu2+"m³";
@@ -128,7 +134,7 @@
 
         function esfera(){
             let raio = Number(prompt("Insira o valor do raio:"))
-            let resu = 4/3*Math.PI*raio**3
+            let resu = 4/3*3.14*raio**3
 
             alert("O resultado da operação é: "+resu+"m³")
             document.getElementById("calculo5").innerHTML = "O resultado da operação é: "+resu+"m³";
